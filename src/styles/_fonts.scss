@@ -1,0 +1,68 @@
+@import "node_modules/include-media/dist/include-media";
+
+//Remember that WebPack is using 'src' as the parent, so reference your url's accordingly /
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.arapey{
+    font-family: 'Arapey', serif;   
+    letter-spacing: 2px;
+}
+
+@font-face{
+    font-family: 'brandon';
+    src: url('fonts/brandon_bld.woff') format('woff');
+  }
+
+@font-face{
+  font-family: 'droid';
+  src: url('fonts/DroidSerif-Regular.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'edmondsans-m';
+  src: url('fonts/edmondsans-medium-webfont.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'edmondsans';
+  src: url('fonts/edmondsans-regular-webfont.woff') format('woff');
+}
+
+.edmondsans{
+  font-family: 'edmondsans';
+}
+
+.edmondsans-m{
+  font-family: 'edmondsans';
+}
+
+  
+.brandon{
+  font-family: 'brandon';
+}
+
+.droid{
+  font-family: 'droid';
+}
+
+.f0{ 
+  font-size: 4rem;
+  @include media(">=phone"){  //phone defaults above
+    @include media("landscape"){ //phone landscape
+
+    }
+  }      
+  @include media(">=tablet"){    //tablet portrait
+
+    @include media("landscape") {  //tablet landscape
+
+    }
+  } 
+  @include media(">=desktop") {  //desktop 
+    font-size: 8rem;
+  }
+
+}

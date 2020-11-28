@@ -1,0 +1,162 @@
+.bg-about-banner{
+  background: url("https://www.muskegonchiropractors.com/shared/templates/7g/img/slides/chiro-7g-07-slider-1.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: cover;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-position: 0% -50%;
+        background-size: contain;
+      }
+}
+
+.bg-treatment-banner{
+  background: url(img/gymnast_banner.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: 200%;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-position: 0% -50%;
+        background-size: contain;
+      }
+}
+
+.bg-nutrition-banner{
+  background: url(img/nutrition_banner.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: cover;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-position: center;
+      }
+}
+
+.bg-location-banner{
+  background: url("http://www.newportdunes.com/wp-content/uploads/Experience-the-Charm-of-Newport-Beach-Title-Bar_1920x580-1.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: cover;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-position: center;
+      }
+}
+
+.bg-faq-banner{
+  background: url(img/consult.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: cover;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-size: contain;
+      }
+}
+
+.bg-intake-banner{
+  background: url("https://makeovertravelplasticsurgery.com/wp-content/uploads/2017/12/filling-out-medical-forms-2.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-size: cover;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        background-size: contain;
+      }
+}
+
+.mt-fix {
+    margin-top: -2px;
+}
+
+.flex-h-collapse {
+    height: 0%;
+}
+
+.barely-border {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.bg-under-hero{
+    background: #CCC2C4;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}

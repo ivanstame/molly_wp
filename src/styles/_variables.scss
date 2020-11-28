@@ -1,0 +1,28 @@
+$logo_color: #A5B3A5;
+$compliment_bright: #BCE5D4;
+$compliment_dark: #284C3D;
+$light_washed_green: #F7F9F7;
+$muted_logo_color: #CED6CE;
+$btn_color: #92B392;
+$bg_color_pop: #D9E2D9;
+
+
+.bg-front-card{
+    background: rgba(235,255,235,0.5)
+}
+
+.bg-custom-green {
+    background: $bg_color_pop;
+}
+
+.f--main-color{
+    color: $btn_color;
+}
+
+.bg-btn-color {
+    background: $btn_color;
+}
+
+.b--main-green {
+    border-color: $btn_color;
+}

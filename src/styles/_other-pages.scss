@@ -1,0 +1,218 @@
+//  TREATMENTS PAGE
+
+#service-page-info{
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .row {
+        text-align: left;
+    }
+        .image {
+            margin-bottom: 2rem;
+            @include media(">=phone"){  //phone defaults above
+                @include media("landscape"){ //phone landscape
+            
+                }
+              }      
+              @include media(">=tablet"){    //tablet portrait
+            
+                @include media("landscape") {  //tablet landscape
+            
+                }
+              } 
+              @include media(">=desktop") {  //desktop 
+                display: inline-block;
+                // THIS WILL NEED EXPLICIT WIDTHS FOR DIFFERENT SIZES
+                vertical-align: middle;
+                margin-right: 4rem;
+              }
+        }
+        .text {
+            @include media(">=phone"){  //phone defaults above
+                @include media("landscape"){ //phone landscape
+            
+                }
+              }      
+              @include media(">=tablet"){    //tablet portrait
+            
+                @include media("landscape") {  //tablet landscape
+            
+                }
+              } 
+              @include media(">=desktop") {  //desktop 
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+              }
+        }
+        .row {
+            &:nth-child(odd) {
+                @include media(">=phone"){  //phone defaults above
+                    @include media("landscape"){ //phone landscape
+                
+                    }
+                  }      
+                  @include media(">=tablet"){    //tablet portrait
+                
+                    @include media("landscape") {  //tablet landscape
+                
+                    }
+                  } 
+                  @include media(">=desktop") {  //desktop 
+                    text-align: right;
+                  }
+                p{
+                    text-align: justify;
+                }
+                h3{
+                    text-align: left;
+                }
+                .image {
+
+                    @include media(">=phone"){  //phone defaults above
+                        @include media("landscape"){ //phone landscape
+                    
+                        }
+                      }      
+                      @include media(">=tablet"){    //tablet portrait
+                    
+                        @include media("landscape") {  //tablet landscape
+                    
+                        }
+                      } 
+                      @include media(">=desktop") {  //desktop 
+                        float: right;
+                        margin-left: 4rem;
+                      }
+                }
+            }
+            &:before {
+                content: " ";
+                display: table;
+            }
+            &:after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+        }
+}
+
+
+
+// NUTRITION PAGE
+
+#nutrition-page-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 4rem;
+
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: unset;
+      }
+}
+
+// LOCATION PAGE
+
+#location-section {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 75px;
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+      }      
+      @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+      } 
+      @include media(">=desktop") {  //desktop 
+        grid-template-rows: unset;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px;
+      }
+      #map-wrapper{
+        
+        @include media(">=phone"){  //phone defaults above
+          @include media("landscape"){ //phone landscape
+      
+          }
+        }      
+        @include media(">=tablet"){    //tablet portrait
+      
+          @include media("landscape") {  //tablet landscape
+      
+          }
+        } 
+        @include media(">=desktop") {  //desktop 
+          grid-row: unset;
+        }
+      }
+      #location-info-wrapper{
+        grid-row: 1;
+        @include media(">=phone"){  //phone defaults above
+          @include media("landscape"){ //phone landscape
+      
+          }
+        }      
+        @include media(">=tablet"){    //tablet portrait
+      
+          @include media("landscape") {  //tablet landscape
+      
+          }
+        } 
+        @include media(">=desktop") {  //desktop 
+          grid-row: unset;
+        }
+      }
+}
+
+// FAQ PAGE
+
+#faq-section {
+    
+    @include media(">=phone"){  //phone defaults above
+        @include media("landscape"){ //phone landscape
+    
+        }
+    }      
+    @include media(">=tablet"){    //tablet portrait
+    
+        @include media("landscape") {  //tablet landscape
+    
+        }
+    } 
+    @include media(">=desktop") {  //desktop 
+
+    }
+    .question{
+        position: relative;
+        &:after{
+        position: absolute;
+        display: block;
+        content: '';
+        background: #BCE5D4;
+        height: 2px;
+        width: 30%;
+        top: 150%;
+        }
+
+    }
+}
